@@ -70,12 +70,12 @@ calcPCClocks <- function(path_to_PCClocks_directory, datMeth, datPheno){
   #Initialize a data frame for PC clocks
   DNAmAge <- datPheno
   
-  var = readline(prompt = "To check whether datMeth and datPheno match up, type the column name in datPheno with sample names (or type skip):")
-  if(var != "skip"){
-    if(sum(DNAmAge[,var] == rownames(datMeth)) != dim(DNAmAge[,var])[1]){
-      warning("Warning: It would appear that datPheno and datMeth do not have matching sample order! Check your inputs!")
-    } else message("datPheno and datMeth sample order verified to match!")
-  }
+#  var = readline(prompt = "To check whether datMeth and datPheno match up, type the column name in datPheno with sample names (or type skip):")
+#  if(var != "skip"){
+#    if(sum(DNAmAge[,var] == rownames(datMeth)) != dim(DNAmAge[,var])[1]){
+#      warning("Warning: It would appear that datPheno and datMeth do not have matching sample order! Check your inputs!")
+#    } else message("datPheno and datMeth sample order verified to match!")
+#  }
   
   message("Calculating PC Clocks now")
   
